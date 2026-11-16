@@ -1,0 +1,100 @@
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e8ebe6;
+}
+
+.header-content {
+  width: min(1120px, calc(100% - 40px));
+  min-height: 82px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #17211d;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: #d7f15f;
+  color: #19331d;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.brand-name {
+  font-size: 17px;
+  letter-spacing: -0.5px;
+}
+
+.brand-name strong {
+  color: #427c39;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-nav a {
+  color: #5b655e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #347333;
+}
+
+.main-nav .contact-link {
+  padding: 12px 19px;
+  border-radius: 999px;
+  background: #1c3b25;
+  color: #fff;
+}
+
+.main-nav .contact-link:hover,
+.main-nav .contact-link.active {
+  background: #347333;
+  color: #fff;
+}
+
+@media (max-width: 560px) {
+  .header-content {
+    width: min(100% - 32px, 1120px);
+    min-height: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    padding: 14px 0;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+  }
+
+  .main-nav .contact-link {
+    padding: 10px 14px;
+  }
+}
