@@ -26,4 +26,14 @@ describe('App', () => {
     expect(compiled.querySelector('app-footer')).toBeTruthy();
     expect(compiled.querySelector('router-outlet')).toBeTruthy();
   });
+
+  it('should provide the home, plans, and partnerships routes', () => {
+    expect(routes).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ path: 'inicio' }),
+        expect.objectContaining({ path: 'planos' }),
+        expect.objectContaining({ path: 'parcerias' }),
+      ]),
+    );
+  });
 });

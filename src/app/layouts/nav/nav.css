@@ -45,7 +45,7 @@
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .main-nav a {
@@ -74,10 +74,9 @@
   color: #fff;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 720px) {
   .header-content {
     width: min(100% - 32px, 1120px);
-    min-height: 72px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 14px;
@@ -86,8 +85,9 @@
 
   .main-nav {
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 12px 18px;
   }
 
   .main-nav a {
